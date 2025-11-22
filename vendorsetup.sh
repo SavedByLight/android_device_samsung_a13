@@ -1,8 +1,4 @@
-#
-# Copyright (C) 2025 The Android Open Source Project
-# Copyright (C) 2025 SebaUbuntu's TWRP device tree generator
-#
-# SPDX-License-Identifier: Apache-2.0
-#
-
 export ALLOW_MISSING_DEPENDENCIES=true
+git clone https://gitlab.com/HayateDevTH/avb_tool -b main out/host/linux-x86/bin
+sudo chmod +rwx out/host/linux-x86/bin/avbtool
+chmod a+x device/samsung/a12s/mkbootimg
