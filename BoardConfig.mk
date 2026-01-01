@@ -83,7 +83,7 @@ BOARD_AVB_RECOVERY_ROLLBACK_INDEX_LOCATION := 1
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 TW_NO_LEGACY_PROPS := true
-TW_INCLUDE_LIBRESETPROP := true
+#TW_INCLUDE_LIBRESETPROP := true
 
 # Filesystems
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery.fstab
@@ -154,6 +154,9 @@ TARGET_USES_LOGD := true
 TWRP_INCLUDE_LOGCAT := true
 TWRP_EVENT_LOGGING := true
 TW_EXCLUDE_DEFAULT_USB_INIT := true
+
+# Version
+TW_DEVICE_VERSION := SavedByLight Pre-Release
 
 # Version
 TW_DEVICE_VERSION := SavedByLight Pre-Release
