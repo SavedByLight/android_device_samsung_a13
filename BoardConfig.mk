@@ -73,7 +73,7 @@ BOARD_SAMSUNG_DYNAMIC_PARTITIONS_PARTITION_LIST := system system system vendor p
 BOARD_SAMSUNG_DYNAMIC_PARTITIONS_SIZE := 9122611200 # TODO: Fix hardcoded value
 
 # Verified Boot
-BOARD_AVB_ENABLE := false
+BOARD_AVB_ENABLE := true
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 3
 BOARD_AVB_RECOVERY_KEY_PATH := external/avb/test/data/testkey_rsa4096.pem
 BOARD_AVB_RECOVERY_ALGORITHM := SHA256_RSA4096
@@ -154,9 +154,6 @@ TARGET_USES_LOGD := true
 TWRP_INCLUDE_LOGCAT := true
 TWRP_EVENT_LOGGING := true
 TW_EXCLUDE_DEFAULT_USB_INIT := true
-
-# Version
-TW_DEVICE_VERSION := SavedByLight Pre-Release
 
 # Version
 TW_DEVICE_VERSION := SavedByLight Pre-Release
